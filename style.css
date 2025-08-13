@@ -1,0 +1,256 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.menu a{
+    margin: 2rem;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* hero */
+#hero {
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+}
+
+.kiri {
+    width: 60%;
+}
+
+.kanan {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.kanan img {
+    width: 300px;
+    border-radius: 2rem 0 2rem 0;
+}
+
+.button {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.button a {
+    text-decoration: none;
+    color: rgb(106, 106, 232);
+    border: 2px solid rgb(106, 106, 232);
+    padding: 0.5rem 1rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+
+.button a:hover {
+    background-color: rgb(106, 106, 232);
+    color: white;
+}
+
+/* section: skills */
+#skills {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 5rem 0 10rem 0;
+}
+
+#skills h2{
+    font-size: 35px;
+}
+
+.skill img {
+    width: 30px;
+}
+
+.skill {
+    border: 2px solid lightgray;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* testimoni */
+#testimoni h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.profil-card img {
+    width: 120px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profil-card {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 2rem;
+}
+
+.pekerjaan {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.deskripsi {
+    font-style: italic;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.profil-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+/* contact css */
+#contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+
+#contact .kiri {
+    width: 50%;
+}
+
+#contact .kanan {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: lightgray;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+iframe {
+    border-radius: 1rem;
+    width: 80%;
+    height: 350px;
+}
+
+
+/* responsive css */
+@media only screen and (max-width: 768px) {
+   nav {
+        flex-direction: column;
+   } 
+   .menu a{
+        font-size: small;
+        margin: 0;
+   }
+
+   #hero {
+        flex-direction: column-reverse;
+        padding: 1rem;
+        text-align: center;
+   }
+
+   .kiri {
+        width: 100%;
+        margin-bottom: 2rem;
+   }
+   
+   .kanan {
+        width: 100%;
+        justify-content: center;
+   }
+
+   .button {
+        flex-direction: column;
+        gap: 2rem;
+   }
+
+   #contact {
+        flex-direction: column;
+        padding: 1rem;
+   }
+
+   iframe {
+        border-radius: 1rem;
+        width: 100%;
+        height: 350px;
+    }
+
+    #contact .kiri {
+        width: 50%;
+    }
+
+    #contact .kanan {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+}
