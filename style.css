@@ -241,16 +241,12 @@ iframe {
     }
 
     #contact .kiri {
-        width: 50%;
+        width: 100%;
     }
 
     #contact .kanan {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2rem;
-        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
     }
 
 }
